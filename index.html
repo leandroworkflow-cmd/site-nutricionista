@@ -8,7 +8,7 @@
 <meta name="keywords" content="nutricionista, nutricionista em Belo Horizonte, consulta nutricional, reeducação alimentar, emagrecimento saudável, plano alimentar, nutrição esportiva, acompanhamento nutricional">
 <meta name="author" content="Poliana Soares de Oliveira">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#17402F">
+<meta name="theme-color" content="#584840">
 <link rel="canonical" href="https://www.SEUDOMINIO.com.br/">
 <meta name="geo.region" content="BR-MG">
 <meta name="geo.placename" content="Belo Horizonte">
@@ -25,7 +25,9 @@
 <meta name="twitter:description" content="Nutrição clínica com plano alimentar feito para a sua rotina.">
 <meta name="twitter:image" content="https://www.SEUDOMINIO.com.br/images/og-image.jpg">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="images/logo-favicon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -37,16 +39,10 @@
   "name": "Poliana Soares de Oliveira – Nutricionista",
   "image": "https://www.SEUDOMINIO.com.br/images/retrato.jpg",
   "url": "https://www.SEUDOMINIO.com.br/",
-  "telephone": "+55-31-90000-0000",
+  "telephone": "+55-31-99134-189",
   "description": "Consultório de nutrição clínica com atendimento individual e plano alimentar personalizado.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Rua Exemplo, 123, Sala 45",
-    "addressLocality": "Belo Horizonte",
-    "addressRegion": "MG",
-    "postalCode": "30000-000",
-    "addressCountry": "BR"
-  },
+  "areaServed": "BR",
+  "availableChannel": {"@type": "ServiceChannel", "serviceType": "Atendimento virtual"},
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
@@ -59,8 +55,8 @@
 
 <style>
 :root{
-  --verde:#17402F; --folha:#3F7D58; --salvia:#E4EDE2; --branco:#FBFCFA;
-  --ouro:#B8923A; --tinta:#1D2B24; --suave:#5B6B62;
+  --verde:#584840; --folha:#9A7B4F; --salvia:#EFE7DF; --branco:#F7F3F0;
+  --ouro:#B8986A; --tinta:#43342E; --suave:#7A6A61;
   --serif:'Cormorant Garamond',Georgia,serif; --sans:'Outfit',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -76,7 +72,7 @@ section{padding:clamp(3.5rem,9vw,6.5rem) 0}
 p+p{margin-top:1rem}
 
 /* topo */
-header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(23,64,47,.1);padding-top:env(safe-area-inset-top,0px)}
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(247,243,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(88,72,64,.1);padding-top:env(safe-area-inset-top,0px)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--verde);text-decoration:none;line-height:1}
 .logo small{display:block;font-family:var(--sans);font-size:.7rem;font-weight:400;color:var(--folha);letter-spacing:.04em;margin-top:3px}
@@ -107,7 +103,7 @@ nav .btn{padding:.6rem 1.2rem;font-size:.9rem}
 .acoes{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
 .retrato{position:relative;justify-self:center;width:min(100%,420px)}
 .retrato::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1.5px solid var(--ouro);border-radius:200px 200px 24px 24px}
-.retrato img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:200px 200px 24px 24px;box-shadow:0 30px 60px -25px rgba(23,64,47,.45)}
+.retrato img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:200px 200px 24px 24px;box-shadow:0 30px 60px -25px rgba(88,72,64,.45)}
 .selo{position:absolute;left:-18px;bottom:28px;background:var(--verde);color:#fff;padding:.8rem 1.2rem;border-radius:16px;font-size:.88rem;line-height:1.35;box-shadow:0 14px 30px -12px rgba(0,0,0,.4)}
 .selo strong{display:block;font-family:var(--serif);font-size:1.25rem;font-weight:600}
 .hero .wrap>*{animation:entra .9s cubic-bezier(.2,.7,.2,1) both}
@@ -116,14 +112,14 @@ nav .btn{padding:.6rem 1.2rem;font-size:.9rem}
 
 /* sobre */
 .sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,5rem);align-items:center}
-.sobre figure img{border-radius:24px;aspect-ratio:3/4;object-fit:cover;width:100%;box-shadow:0 26px 50px -28px rgba(23,64,47,.5)}
+.sobre figure img{border-radius:24px;aspect-ratio:3/4;object-fit:cover;width:100%;box-shadow:0 26px 50px -28px rgba(88,72,64,.5)}
 .sobre blockquote{font-family:var(--serif);font-style:italic;font-size:1.5rem;line-height:1.3;color:var(--folha);margin-top:1.8rem;padding-left:1.2rem;border-left:3px solid var(--ouro)}
 .dados{display:flex;gap:2.2rem;flex-wrap:wrap;margin-top:2rem}
 .dados div{font-size:.92rem;color:var(--suave)}
 .dados b{display:block;font-family:var(--serif);font-size:1.6rem;color:var(--verde);font-weight:600}
 
 /* missão visão valores */
-.mvv{background:var(--verde);color:#E8F0EA}
+.mvv{background:var(--verde);color:#F3ECE4}
 .mvv h2,.mvv h3{color:#fff}
 .mvv .intro{max-width:52ch;opacity:.85;margin-bottom:3rem}
 .mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3vw,2.5rem)}
@@ -137,27 +133,27 @@ nav .btn{padding:.6rem 1.2rem;font-size:.9rem}
 .servicos-lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem;margin-top:2.5rem}
 .servico{background:var(--salvia);padding:2rem 1.8rem;border-radius:22px}
 .servico:nth-child(2){background:#fff;border:1.5px solid var(--salvia)}
-.servico:nth-child(3){background:#F3EBDA}
+.servico:nth-child(3){background:#E6D9C8}
 .servico h3{font-size:1.65rem;margin-bottom:.6rem}
 .servico p{font-size:.98rem;color:var(--suave)}
 
 /* formação */
 .formacao{background:linear-gradient(180deg,var(--branco),var(--salvia))}
 .formacao .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,6vw,5rem);align-items:center}
-.formacao img{border-radius:24px;aspect-ratio:3/4;object-fit:cover;object-position:top;width:min(100%,380px);justify-self:center;box-shadow:0 26px 50px -28px rgba(23,64,47,.5)}
+.formacao img{border-radius:24px;aspect-ratio:3/4;object-fit:cover;object-position:top;width:min(100%,380px);justify-self:center;box-shadow:0 26px 50px -28px rgba(88,72,64,.5)}
 .passos{list-style:none;margin-top:1.6rem;counter-reset:p}
-.passos li{counter-increment:p;padding:1rem 0 1rem 3.2rem;position:relative;border-bottom:1px solid rgba(23,64,47,.15)}
+.passos li{counter-increment:p;padding:1rem 0 1rem 3.2rem;position:relative;border-bottom:1px solid rgba(88,72,64,.15)}
 .passos li::before{content:counter(p);position:absolute;left:0;top:.9rem;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:700}
 .passos b{display:block;font-weight:500;color:var(--verde)}
 
 /* contato */
-.contato{background:var(--verde);color:#E8F0EA;text-align:center}
+.contato{background:var(--verde);color:#F3ECE4;text-align:center}
 .contato h2{color:#fff}
 .contato p{max-width:48ch;margin-inline:auto;opacity:.88}
 .contato .acoes{justify-content:center}
 
 /* rodapé */
-footer{background:#0F2D21;color:#B9CCBF;padding:3.5rem 0 1.5rem;font-size:.95rem}
+footer{background:#3E312B;color:#D6C7BA;padding:3.5rem 0 1.5rem;font-size:.95rem}
 .rodape{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.5rem}
 footer h4{font-family:var(--serif);color:#fff;font-size:1.3rem;margin-bottom:.8rem;font-weight:600}
 footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underline}
@@ -169,7 +165,7 @@ footer address{font-style:normal;line-height:1.8}
 
 @media(max-width:860px){
   .menu-btn{display:block}
-  nav ul{position:absolute;top:100%;left:0;right:0;background:var(--branco);flex-direction:column;gap:0;padding:.5rem 4% 1.2rem;border-bottom:1px solid rgba(23,64,47,.12);display:none}
+  nav ul{position:absolute;top:100%;left:0;right:0;background:var(--branco);flex-direction:column;gap:0;padding:.5rem 4% 1.2rem;border-bottom:1px solid rgba(88,72,64,.12);display:none}
   nav ul.aberto{display:flex}
   nav li{width:100%}nav li a{display:block;padding:.9rem 0;border-bottom:1px solid var(--salvia)}
   nav li:last-child a{border:0;text-align:center;margin-top:.8rem}
@@ -197,7 +193,7 @@ footer address{font-style:normal;line-height:1.8}
         <li><a href="#proposito">Missão, visão e valores</a></li>
         <li><a href="#atendimento">Atendimento</a></li>
         <li><a href="#formacao">Como funciona</a></li>
-        <li><a class="btn" href="https://wa.me/5531900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar consulta</a></li>
+        <li><a class="btn" href="https://wa.me/553199134189?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar consulta</a></li>
       </ul>
     </nav>
   </div>
@@ -210,7 +206,7 @@ footer address{font-style:normal;line-height:1.8}
       <h1>Comer bem pode ser <em>leve</em> e caber na sua rotina.</h1>
       <p class="lead">Nutrição clínica com plano alimentar individual, feito para o seu corpo, seus horários e seus objetivos.</p>
       <div class="acoes">
-        <a class="btn" href="https://wa.me/5531900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="btn" href="https://wa.me/553199134189?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
         <a class="btn borda" href="#sobre">Conhecer a nutricionista</a>
       </div>
     </div>
@@ -219,7 +215,7 @@ footer address{font-style:normal;line-height:1.8}
         <source srcset="images/retrato.webp" type="image/webp">
         <img src="images/retrato.jpg" width="720" height="1079" alt="Poliana Soares de Oliveira, nutricionista, sorrindo de jaleco branco" fetchpriority="high">
       </picture>
-      <div class="selo"><strong>Nutricionista</strong>Atendimento presencial e online</div>
+      <div class="selo"><strong>Nutricionista</strong>Atendimento 100% online</div>
     </div>
   </div>
 </section>
@@ -239,7 +235,7 @@ footer address{font-style:normal;line-height:1.8}
       <blockquote>Alimentação saudável é a que cabe na sua vida.</blockquote>
       <div class="dados">
         <div><b>Individual</b>plano feito só para você</div>
-        <div><b>Presencial e online</b>atendimento flexível</div>
+        <div><b>100% online</b>atendimento virtual</div>
         <div><b>Com acompanhamento</b>retornos e ajustes</div>
       </div>
     </div>
@@ -318,7 +314,7 @@ footer address{font-style:normal;line-height:1.8}
     <h2>Vamos começar a cuidar da sua saúde?</h2>
     <p>Envie uma mensagem e agende sua primeira consulta. Respondo em horário comercial.</p>
     <div class="acoes">
-      <a class="btn claro" href="https://wa.me/5531900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn claro" href="https://wa.me/553199134189?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener">Chamar no WhatsApp</a>
       <a class="btn claro" href="mailto:contato@SEUDOMINIO.com.br">Enviar e-mail</a>
     </div>
   </div>
@@ -333,18 +329,15 @@ footer address{font-style:normal;line-height:1.8}
         <p>Nutricionista · CRN-9 00000<br>Nutrição clínica com atendimento individual e acompanhamento.</p>
       </div>
       <div>
-        <h4>Endereço</h4>
+        <h4>Atendimento</h4>
         <address>
-          Rua Exemplo, 123, Sala 45<br>
-          Bairro Exemplo · Belo Horizonte, MG<br>
-          CEP 30000-000<br>
-          <a href="https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Belo+Horizonte+MG" target="_blank" rel="noopener">Ver no mapa</a>
+          Atendimento somente virtual
         </address>
       </div>
       <div>
         <h4>Contato</h4>
         <p>
-          <a href="https://wa.me/5531900000000" target="_blank" rel="noopener">(31) 90000-0000</a><br>
+          <a href="https://wa.me/553199134189" target="_blank" rel="noopener">(31) 99134-189</a><br>
           <a href="mailto:contato@SEUDOMINIO.com.br">contato@SEUDOMINIO.com.br</a><br>
           Seg a sex, 8h às 18h<br>
           <a href="https://instagram.com/SEUPERFIL" target="_blank" rel="noopener">Instagram</a>
@@ -358,7 +351,7 @@ footer address{font-style:normal;line-height:1.8}
   </div>
 </footer>
 
-<a class="zap" href="https://wa.me/5531900000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+<a class="zap" href="https://wa.me/553199134189?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 28l6.9-1.8c1.8 1 3.9 1.500 6.100 1.500 6.600 0 12-5.400 12-12S22.600 3 16 3zm0 21.800c-1.900 0-3.800-.5-5.400-1.500l-.4-.2-4 1 1.100-3.900-.3-.4C6.100 18.200 5.500 16.600 5.500 15 5.500 9.200 10.200 4.500 16 4.500S26.500 9.200 26.500 15 21.800 24.800 16 24.800zm5.800-7.300c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200-.2.300-.8 1-1 1.200-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7.1-.1.300-.4.500-.5.200-.2.200-.3.300-.5.100-.2.100-.4 0-.5-.1-.2-.7-1.700-1-2.300-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.1.200 2.100 3.200 5.100 4.500 2.900 1.200 2.900.8 3.400.8.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.2-.3-.3-.6-.4z"/></svg>
 </a>
 
